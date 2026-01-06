@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - SD Negeri 1 Jakarta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i> SDN 1 Jakarta
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil Sekolah</a></li>
+                <li><a href="guru.html">Guru & Staff</a></li>
+                <li><a href="kegiatan.html">Kegiatan</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html" class="active">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 50vh; padding: 0; display: flex; align-items: center; justify-content: center;">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami Siap Melayani Anda</p>
+        </div>
+    </header>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card" style="padding: 30px; text-align: center;">
+                    <i class="fas fa-map-marker-alt fa-2x" style="color: var(--primary-color); margin-bottom: 15px;"></i>
+                    <h3>Alamat</h3>
+                    <p>Jl. Merdeka No. 1, Jakarta Pusat, DKI Jakarta</p>
+                </div>
+                <div class="card" style="padding: 30px; text-align: center;">
+                    <i class="fas fa-phone fa-2x" style="color: var(--primary-color); margin-bottom: 15px;"></i>
+                    <h3>Telepon</h3>
+                    <p>(021) 123-4567</p>
+                    <p>(021) 765-4321</p>
+                </div>
+                <div class="card" style="padding: 30px; text-align: center;">
+                    <i class="fas fa-envelope fa-2x" style="color: var(--primary-color); margin-bottom: 15px;"></i>
+                    <h3>Email</h3>
+                    <p>info@sdn1jakarta.sch.id</p>
+                    <p>admin@sdn1jakarta.sch.id</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="grid-3" style="grid-template-columns: 1fr 1fr; gap: 40px;">
+                <!-- Form Kontak -->
+                <div class="contact-form">
+                    <div class="section-title" style="text-align: left; margin-bottom: 20px;">
+                        <h2>Kirim Pesan</h2>
+                    </div>
+                    <!-- Form menggunakan Formspree (Contoh) -->
+                    <form action="https://formspree.io/f/mrgwjkg" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="Masukkan email aktif">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required placeholder="Judul pesan">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666427009756!2d106.82496467409609!3d-6.175392393811986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e7645365%3A0x451ce18562088f7c!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1689582928374!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SD Negeri 1 Jakarta</h3>
+                    <p>Mencetak generasi cerdas, berkarakter, dan kompetitif.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Merdeka No. 1, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> (021) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sdn1jakarta.sch.id</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SD Negeri 1 Jakarta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
